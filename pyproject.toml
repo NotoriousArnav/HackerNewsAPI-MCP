@@ -1,11 +1,12 @@
 [project]
-name = "HackerNews Scraper API"
+name = "HackerNews-Scraper-API"
 version = "0.1.0"
 description = "Web Scraping API for HackerNews"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bs4>=0.0.2",
+    "fake-useragent>=2.2.0",
     "fastmcp>=3.2.3",
     "httpx>=0.28.1",
     "lxml>=6.0.3",
