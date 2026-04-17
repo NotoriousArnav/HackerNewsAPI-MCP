@@ -9,7 +9,6 @@ Article = dict[str, Any]
 Comment = dict[str, str]
 ArticleDetail = dict[str, Any]
 
-
 class _RateLimitedClientProxy:
     def __init__(
         self, client: httpx.Client, cooldown: int = 2, random_ua: bool = True
@@ -48,7 +47,6 @@ class _RateLimitedClientProxy:
 
             return wrapper
         return attr
-
 
 class HackerNews:
     def __init__(self, cooldown: int = 2, random_ua: bool = True) -> None:
